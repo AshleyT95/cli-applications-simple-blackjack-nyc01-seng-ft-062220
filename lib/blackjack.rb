@@ -38,10 +38,7 @@ def end_game(card_total)
   puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
-def invalid_command
-  puts "Please enter a valid command"
-  get_user_input
-end
+
 
 def hit?(card_total)
   prompt_user
@@ -54,7 +51,10 @@ def hit?(card_total)
     invalid_command
   end
 end
-
+def invalid_command
+  puts "Please enter a valid command"
+  get_user_input
+end
 
 
 ##########
