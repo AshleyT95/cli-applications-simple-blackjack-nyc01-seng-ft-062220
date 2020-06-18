@@ -26,7 +26,7 @@ end
 def end_game(card_total)
   # code #end_game here
   puts "Sorry, you hit #{card_total}. Thanks for playing!"
-  
+
 end
 
 def initial_round
@@ -48,7 +48,7 @@ def hit?(current_card)
     invalid_command
   end
 end
-  
+
 end
 
 def invalid_command
