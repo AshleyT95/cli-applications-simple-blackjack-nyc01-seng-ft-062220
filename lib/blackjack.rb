@@ -20,18 +20,35 @@ end
 
 def get_user_input
   # code #get_user_input here
+  user_input= gets.chomp
 end
 
-def end_game
+def end_game(card_total)
   # code #end_game here
+  puts "Sorry, you hit #{card_total}. Thanks for playing!"
+  
 end
 
 def initial_round
   # code #initial_round here
+  first_round = deal_card + deal_card
+  display_card_total(first_round)
+  return first_round
 end
 
-def hit?
+def hit?(current_card)
   # code hit? here
+  prompt_user
+  user_input = get_user_input
+  if user_input == "h"
+    card_total += deal_card
+  elsif user_input == "s"
+    card_total
+  else
+    invalid_command
+  end
+end
+  
 end
 
 def invalid_command
